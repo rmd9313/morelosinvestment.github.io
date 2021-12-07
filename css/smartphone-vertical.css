@@ -1,0 +1,744 @@
+/* CSS DE MORELOS INVESTMENT INDEX HTML · SMARTPHONE VERTICAL HASTA 414PX */
+
+@media screen and (max-width: 414px){
+/* NO ESCRIBIR ANTES DE ESTA LÍNEA DE CÓDIGO */
+
+/* Escribir el código aquí */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.header{
+    position: fixed;
+
+    width: 100%;
+    height: 80px;
+    /* background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px); */
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+
+    z-index: 3;
+}
+
+.header-logo{
+    width: 100%; /* MODIFICADO TH */
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo p{
+    display: block;
+    line-height: 25px;
+    
+    color: rgb(61, 176, 35);
+    font-size: 12px;
+
+    margin-right: 10px;
+}
+
+.header-logo img{
+    height: 25px;
+}
+
+.header-nav{
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nav ul{
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+}
+
+.header-nav li a{
+    text-decoration: none;
+    display: block;
+    color: black;
+
+    margin: 0px 10px;
+    padding: 0px 10px;
+
+    line-height: 40px;
+
+    font-size: 12px;
+}
+
+.header-nav  li a:hover{
+    color: white;
+
+    background-color: rgb(61, 176, 35);
+    box-shadow: 0px 5px 10px 2px rgba(61, 176, 35, 0.2);
+}
+
+/* CUERPO */
+
+.container{
+    width: 96%; /* MODIFICADO TH - TV */
+    height: 4155;
+    background-color: white;
+
+    margin: auto;
+}
+
+/* COMIENZA MAIN */
+
+.main{
+    width: 100%; /* MODIFICADO TH - TV */
+    min-height: 3270px;
+    background-color: white;
+
+    float: left;
+
+    margin: 80px 0px 0px 0px;
+}
+
+/* Comienza Card Section*/
+
+/* Card Section  - Navegador */
+
+.card{
+    width: 100%;
+    min-height: 1310px; /* MODIFICADO TH */
+    background-color: white;
+
+    margin: 10px 0px 0px 0px;
+}
+
+.card-nav{
+    width: 100%; /* MODIFICADO TV */
+    height: 105px;
+    background-color: white;
+
+    padding: 10px 0 0 0;
+
+    position: sticky;
+    top: 80px;
+
+    z-index: 1;
+
+}
+
+.card-nav-cols{
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    float: left;
+    overflow-x: auto;
+}
+
+.card-nav h1{
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+
+    font-size: 25px;
+}
+
+.card-nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.card-nav ul li{
+    cursor: pointer;
+}
+
+.card-nav li a{
+    text-decoration: none;
+    display: block;
+    width: 170px;
+    text-align: center;
+
+    border-radius: 10px;
+
+    margin: 10px 5px 0px 5px;
+    padding: 10px 10px 10px 10px;
+
+    font-size: 14px;
+
+    color: white;
+
+    background-color: rgb(61, 176, 35);
+    /* box-shadow: 0px 5px 10px 2px rgba(61, 176, 35, 0.2); */
+}
+
+/* Card Section  - Content */
+
+.card-content{
+    width: 100%; /* MODIFICADO TV */
+    height: 100%;
+    background-color: white;
+
+    margin: 10px 0px 0px 0px;
+
+    float: left;
+}
+
+/* Card Section  - Carousel */
+
+.card-content-carousel{
+    width: 100%;
+    height: 315px;
+    background-color: white;
+
+    float: left;
+}
+
+.carousel-main{
+    position: relative;
+}
+
+.carousel-anterior,
+.carousel-siguiente{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: white;
+    opacity: 50%;
+}
+
+.carousel-anterior{
+    left: 2px;
+}
+
+.carousel-siguiente{
+    right: 2px;
+}
+
+.carousel-indicadores .glider-dot{
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: rgb(61, 176, 35);
+    opacity: .2;
+    border-radius: 5;
+}
+
+.carousel-indicadores .glider-dot:hover{
+    opacity: .5;
+}
+
+.carousel-indicadores .glider-dot.active{
+    opacity: 1;
+}
+
+.carousel-elemento p{
+    text-align: center;
+    margin: 5px auto;
+    font-size: 13px;
+}
+
+.carousel-elemento img{
+    width: 100%;
+    height: 250px;
+}
+
+/* Card Section  - Specs */
+
+.card-content-specs{
+    width: 100%;
+    height: 55px;
+    background-color: white;
+
+    margin-bottom: 35px;
+
+    float: left;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.specs-spaces{
+    width: 20%;
+    height: 90%;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.specs-spaces h1, p{
+    display: block;
+}
+
+.specs-spaces h1{
+    color: black;
+    font-size: 15px;
+}
+
+.specs-spaces p{
+    color: grey;
+    font-size: 10px;
+}
+
+.specs-spaces h1 sup{
+    font-size: 8px;
+}
+
+.specs-spaces p sup{
+    font-size: 7px;
+}
+
+/* Card Section  - Description */
+
+.card-content-description{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+
+    float: left;
+}
+
+.card-content-description h6{
+    margin: 0px 10px 0 10px;
+    color: rgb(61, 176, 35)
+}
+
+.card-content-description h1{
+    margin: 5px 10px 0 8px;
+}
+
+.card-content-description p{
+    margin: 5px 25px 0 10px;
+}
+
+/* Card Section  - Budget */
+
+.card-content-budget{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+
+    float: left;
+}
+
+.card-content-budget h6{
+    margin: 0px 10px 0 10px;
+    color: gray;
+}
+
+.card-content-budget h1{
+    margin: 5px 10px 0 8px;
+}
+
+.card-content-budget p{
+    margin: 5px 10px 0 10px;
+}
+
+table {
+    margin: 20px auto;
+    caption-side: bottom;
+    border-collapse: collapse;
+
+    width: 90%;
+}
+
+th{
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(51, 51, 51);
+    
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+td{
+    border-bottom: 1px solid lightgray;
+    padding: 10px 10px 10px 10px;
+    
+    text-align: center;
+}
+
+caption{
+    margin: 10px 0 0 0;
+    font-size: 12px;
+}
+
+/* Comienza Buy Section*/
+
+.buy{
+    width: 100%; /* MODIFICADO TH - TV */
+    height: 710px;
+    margin: 20px 0px 20px 0px; /* MODIFICADO TH */
+    background-color: white;
+}
+
+.faq{
+    width: 100%; /* MODIFICADO TH - TV */
+    height: 640px;
+    margin: 20px 0px 20px 0px; /* MODIFICADO TH */
+    background-color: white;
+}
+
+.company{
+    width: 100%; /* MODIFICADO TH - TV */
+    height: 610px;
+    margin: 20px 0px 20px 0px; /* MODIFICADO TH */
+    background-color: white;
+}
+
+#faq{
+    height: 640px;
+}
+
+.gen-picture{
+    width: 100%;
+    height: 50px;
+    /*background-color: rgb(61, 176, 35);*/
+
+    float: left;
+    position: sticky;
+    top: 80px;
+    z-index: 2;
+}
+
+#buy-picture{
+    background: rgba(61,176,35,1);
+}
+
+#faq-picture{
+    background: linear-gradient(90deg, rgba(61,176,35,1) 0%, rgba(55,55,55,1) 100%);
+}
+
+#company-picture{
+    background: rgba(55,55,55,1);
+}
+
+.gen-picture h1{
+    text-align: center;
+    line-height: 50px;
+
+    color: white;
+    font-size: 20px;
+}
+
+.gen-picture-image img{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.gen-explanation{
+    width: 100%;
+    height: 130px;
+    background-color: white;
+
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gen-explanation-space{
+    width: 90%;
+    background-color: white;
+}
+.gen-explanation-space p{
+    color: gray;
+    text-align: center;
+}
+
+.gen-slider{
+    width: 100%;
+    height: 430px;
+    background-color: white;
+
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gen-slider-faq{
+    height: 450px;
+}
+
+.gen-slider-space{
+    width: 90%;
+    height: 430px;
+    background-color: white;
+    box-shadow: 0px 5px 10px 2px rgba(50, 50, 50, 0.2);
+}
+
+#gen-slider-space-faq{
+    height: 455px;
+}
+
+.gen-slider-content{
+    width: 100%;
+    height: 395px;
+    background-color: white;
+}
+
+.gen-question{
+    width: 100%;
+    height: 25%;
+    background-color: rgb(50, 50, 50);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gen-question-buy{
+    background-color: rgba(61,176,35,1);
+}
+
+#gen-question-faq{
+    background: linear-gradient(90deg, rgba(61,176,35,1) 0%, rgba(55,55,55,1) 100%);
+}
+
+/* #gen-question-company{
+    background-color: rgba(55,55,55,1);
+} NO ES NECESARIO */
+
+.gen-question-space{
+    width: 90%;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.gen-question-space h3{
+    text-align: center;
+    color: white;
+}
+
+.gen-answer{
+    width: 100%;
+    height: 75%;
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gen-answer-space{
+    width: 90%;
+    background-color: whitesmoke;
+}
+
+.gen-answer-space p{
+    text-align: center;
+}
+
+.lSSlideOuter .lSPager.lSpg > li a {
+    z-index: 0;
+}
+
+.lSSlideOuter .lSPager.lSpg > li.active a {
+    background-color: rgb(61, 176, 35);
+}
+
+.lSAction > a{
+    z-index: 1;
+}
+
+/* Comienza FAQ Section*/
+
+/*
+
+.faq{
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+
+    margin: 25px 0px 0px 0px;
+}
+
+.faq p{
+    text-align: center;
+    line-height: 100px;
+}
+
+/* Comienza Company Section*/
+
+/*
+
+.company{
+    width: 100%;
+    height: 500px;
+    background-color: aquamarine;
+
+    margin: 25px 0px 0px 0px;
+}
+
+.company p{
+    text-align: center;
+    line-height: 100px;
+}
+
+/* COMIENZA ASIDE */
+
+.aside{
+    width: 100%; /* MODIFICADO TH - TV */
+    height: 667px;
+    background-color: white;
+
+    float: left; /* MODIFICADO TH - TV */
+
+    margin: auto; /* MODIFICADO TH */
+    /* position: sticky; */ /* MODIFICADO TV */
+    /* top: 75px; */ /* MODIFICADO TV */
+}
+
+.aside-adorno{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(61, 176, 35);
+
+    /* margin: auto; */
+    margin-top: 10px;
+}
+
+.aside h1{
+    color: rgb(61, 176, 35);
+    margin: 20px 10px 0 10px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.aside p{
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+    margin: 15px 10px 0 10px;
+}
+
+.aside-contacts{
+    width: 100%;
+    height: 360px;
+    background-color: white;
+    margin: 20px auto;
+}
+
+.aside ul{
+    list-style: none;
+
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.aside li a{
+    text-decoration: none;
+    display: block;
+    width: 330px;
+
+    text-align: center;
+
+    border-radius: 10px;
+    border: solid 1px lightgray;
+
+    margin: 5px 10px 5px 0px;
+    padding: 5px 10px 5px 10px; /* MODIFICADO TV*/
+
+    color: gray;
+}
+
+.aside li a:hover{
+    color: white;
+    border: none;
+
+}
+
+#phone-contact:hover{
+    background-color: rgb(61, 176, 35);
+    box-shadow: 0px 5px 10px 2px rgba(61, 176, 35, 0.2);
+}
+
+#whats-contact:hover{
+    background-color: rgb(29, 140, 126);
+    box-shadow: 0px 5px 10px 2px rgba(29, 140, 126, 0.2);
+}
+
+#telegram-contact:hover{
+    background-color: rgb(57, 156, 233);
+    box-shadow: 0px 5px 10px 2px rgba(57, 156, 233, 0.2);
+}
+
+#facebook-contact:hover{
+    background-color: rgb(74, 105, 168);
+    box-shadow: 0px 5px 10px 2px rgba(74, 105, 168, 0.2);
+}
+
+#instagram-contact:hover{
+    background-color: rgb(187, 48, 157);
+    box-shadow: 0px 5px 10px 2px rgba(234, 108, 57, 0.2);
+}
+
+#mail-contact:hover{
+    background-color: rgb(225, 67, 58);
+    box-shadow: 0px 5px 10px 2px rgba(225, 67, 58, 0.2);
+}
+
+/* COMIENZA FOOTER */
+
+footer {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(50, 50, 50);
+
+    display: table;
+    text-align: center;
+}
+
+footer p {
+    line-height: 75px;
+    text-align: center;    
+    color: white;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+/* NO ESCRIBIR DESPUÉS DE ESTA LÍNEA DE CÓDIGO */
+}
